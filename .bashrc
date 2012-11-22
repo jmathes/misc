@@ -56,26 +56,22 @@ alias grep='grep --color=auto'
 alias myho="ssh -AC -p3422 sauce@joe.dev.saucelabs.com"
 alias stewardess="~/sandbox/joe/stewardess.py"
 alias sshchef="ssh -p 3422 -l chef"
-alias standup="~/sandbox/joe/standup.py"
+alias standup="~/dev/sauce/sandbox/joe/standup.py"
 #alias run_services=$HOME/run_services.sh
 alias chess="xboard -ics -icshost freechess.org"
-alias hodrip="~/sandbox/joe/hodrip.sh"
-alias redrip="~/sandbox/joe/redrip.py"
-alias sanddrip="~/sanddrip.sh"
-#alias boxdrip="~/boxdrip.sh"
+alias redrip="~/dev/sauce/sandbox/joe/redrip.py"
 alias deploy="echo use screen -r to join, then C-A-D when done && ssh -AC -p3422 joe@joe.dev.saucelabs.com"
-alias velour="python ~/sauce/cloud/velour/velour.py"
+alias velour="python ~/dev/sauce/sauce/cloud/velour/velour.py"
 # alias hipster="brew"  # useless because doesn't propogate to the superuser
 alias respring=". ~/.zshrc"
 #alias superhipster="npm"
 #alias d8="~/v8/d8"
 alias kick_jenkins="ssh -t buildslave.saucelabs.com sudo -u 'jenkins -i . restart.sh; read'"
-cd ~/sauce
 alias report_tomorrow="~/report_tomorrow.sh"
 alias nose="echo 'That only works on your stewardess' && :"
-alias timer='python ~/scratch/timer.py $*'
+alias timer='python ~/dev/misc/timer.py $*'
 alias def='nose'
-
+alias sauce='workon sauce'
 
 export CLICOLOR=1
 export PS1=%~$\
@@ -84,9 +80,8 @@ export PS1=%~$\
 export TERM=xterm-color
 export LSCOLORS=Gx
 export EC2_HOME=~/ec2-api-tools
-export PATH=$PATH:/opt/local/bin:$EC2_HOME/bin:/usr/local/lib/node_modules/coffee-script/bin/
+export PATH=$PATH:/Users/joe/bin:/opt/local/bin:$EC2_HOME/bin:/usr/local/lib/node_modules/coffee-script/bin/
 export EDITOR=/usr/bin/emacs
-export PYTHONPATH=$PYTHONPATH:$HOME/sauce/lib:$HOME/sauce/cloud
 export SAUCE_PROVIDER="sauce"
 export PHP_INI_PATH=$HOME
 export WHICH_DEV="joe"
@@ -110,8 +105,10 @@ export EC2_CERT=~/.aws/cert-TYIOYKGYUYGCXCYLWESZ6G6EOAVEL5KB.pem
 export EC2_KEYPAIR=ec2-joe-dev
 export CAMPFIRE_API_TOKEN="df4726f33b0ebcf8e0fa70528a97ace39cf38b41"
 export CAMPFIRE_PASSWORD="ez6U4ILR"
+export SAUCE_REPOS_ROOT="/Users/joe/dev/sauce"
 export GIT_AUTHOR="Joe Mathes"
 
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 export CLASSPATH=/usr/lib/java/selenium-2.15.0/libs/apache-mime4j-0.6.jar:/usr/lib/java/selenium-2.15.0/libs/bsh-1.3.0.jar:/usr/lib/java/selenium-2.15.0/libs/cglib-nodep-2.1_3.jar:/usr/lib/java/selenium-2.15.0/libs/commons-codec-1.4.jar:/usr/lib/java/selenium-2.15.0/libs/commons-collections-3.2.1.jar:/usr/lib/java/selenium-2.15.0/libs/commons-exec-1.1.jar:/usr/lib/java/selenium-2.15.0/libs/commons-io-2.0.1.jar:/usr/lib/java/selenium-2.15.0/libs/commons-jxpath-1.3.jar:/usr/lib/java/selenium-2.15.0/libs/commons-lang-2.6.jar:/usr/lib/java/selenium-2.15.0/libs/commons-logging-1.1.1.jar:/usr/lib/java/selenium-2.15.0/libs/cssparser-0.9.5.jar:/usr/lib/java/selenium-2.15.0/libs/guava-10.0.1.jar:/usr/lib/java/selenium-2.15.0/libs/hamcrest-all-1.1.jar:/usr/lib/java/selenium-2.15.0/libs/htmlunit-2.9.jar:/usr/lib/java/selenium-2.15.0/libs/htmlunit-core-js-2.9.jar:/usr/lib/java/selenium-2.15.0/libs/httpclient-4.1.2.jar:/usr/lib/java/selenium-2.15.0/libs/httpcore-4.1.3.jar:/usr/lib/java/selenium-2.15.0/libs/httpmime-4.1.2.jar:/usr/lib/java/selenium-2.15.0/libs/jcommander-1.13.jar:/usr/lib/java/selenium-2.15.0/libs/jna-3.3.0.jar:/usr/lib/java/selenium-2.15.0/libs/json-20080701.jar:/usr/lib/java/selenium-2.15.0/libs/junit-dep-4.10.jar:/usr/lib/java/selenium-2.15.0/libs/nekohtml-1.9.15.jar:/usr/lib/java/selenium-2.15.0/libs/operadriver-v0.8.1.jar:/usr/lib/java/selenium-2.15.0/libs/protobuf-java-2.4.1.jar:/usr/lib/java/selenium-2.15.0/libs/sac-1.3.jar:/usr/lib/java/selenium-2.15.0/libs/serializer-2.7.1.jar:/usr/lib/java/selenium-2.15.0/libs/testng-6.0.1-nobsh-noguice.jar:/usr/lib/java/selenium-2.15.0/libs/xalan-2.7.1.jar:/usr/lib/java/selenium-2.15.0/libs/xercesImpl-2.9.1.jar:/usr/lib/java/selenium-2.15.0/libs/xml-apis-1.3.04.jar
+cd ~/dev
 
